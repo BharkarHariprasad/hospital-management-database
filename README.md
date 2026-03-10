@@ -1,11 +1,10 @@
-# Hospital Management Database
+# 🏥 Hospital Management Database
 
 ## Overview
 
-Hospital Management Database is a relational database design project built using **MySQL**.  
-The system models core hospital operations including patient records, doctor management, department organization, appointment scheduling, and treatment tracking.
+Hospital Management Database is a relational database design project developed using **MySQL**. The system models core hospital operations including patient records, doctor management, department organization, appointment scheduling, and treatment tracking.
 
-The database is designed using **relational database principles** with properly structured tables, primary keys, and foreign key constraints to maintain data integrity and consistency.
+The database schema is designed using **relational database principles** with properly structured tables, primary keys, and foreign key constraints to maintain data integrity and consistency.
 
 This project demonstrates practical database design concepts such as **entity relationship modeling, normalization, and structured SQL schema implementation**.
 
@@ -18,16 +17,14 @@ This project demonstrates practical database design concepts such as **entity re
 - Department management
 - Appointment scheduling system
 - Treatment and medical record tracking
-- Relational data integrity using foreign keys
-- Structured database schema using SQL
+- Relational data integrity using foreign key constraints
+- Structured database schema implementation
 
 ---
 
 ## Technologies
 
-- MySQL
-- SQL
-- Relational Database Design
+MySQL | SQL | Relational Database Design
 
 ---
 
@@ -42,8 +39,24 @@ This project demonstrates practical database design concepts such as **entity re
 
 ---
 
+## Database Entities
+
+The database schema includes the following core entities:
+
+- Patients  
+- Doctors  
+- Departments  
+- Appointments  
+- Treatments  
+- Medical Records  
+
+Relationships between these entities are implemented using **foreign key constraints** to maintain referential integrity across the system.
+
+---
+
 ## Project Structure
 
+```
 hospital-management-database
 │
 ├── database
@@ -56,6 +69,7 @@ hospital-management-database
 │   └── queries.sql
 │
 └── README.md
+```
 
 ---
 
@@ -69,48 +83,55 @@ The ER diagram illustrates the relationships between the major entities used in 
 
 ## Sample Queries
 
-Example SQL queries demonstrating how to retrieve and analyze hospital data are included in:sample-queries/queries.sql
+Example SQL queries demonstrating how the database can be used for retrieving and analyzing hospital data are included in:
+
+```
+sample-queries/queries.sql
+```
 
 These queries demonstrate operations such as:
 
 - Retrieving patient records
 - Viewing doctor details
 - Listing appointments
-- Joining patient and doctor data
-- Aggregating appointment information
+- Joining patient and doctor information
+- Aggregating appointment statistics
 
 ---
 
 ## How to Run
 
-### 1. Create the database
+### 1. Create the Database
 
 ```sql
 CREATE DATABASE Healthcare_Records;
+```
 
-2. Import the schema
+### 2. Import the Schema
 
 Run the schema file to create all tables and relationships.
+
+```bash
 mysql -u root -p Healthcare_Records < database/hospital_schema.sql
+```
 
 ---
 
-Learning Context
+## Learning Context
 
-This project was created to practice database schema design and relational modeling for backend systems.
+This project was developed to practice **database schema design and relational modeling** for backend systems.
 
-The focus was on designing a structured relational database capable of supporting hospital workflows such as patient management and appointment scheduling while maintaining proper entity relationships and normalized tables.
+The goal was to design a structured relational database capable of supporting hospital workflows such as patient management, appointment scheduling, and treatment tracking while maintaining proper entity relationships and normalized tables.
 
 ---
 
-Author
+## Author
 
-Hariprasad Bharkar
+Hariprasad Bharkar  
+Java Backend Developer  
 
-Java Backend Developer
+GitHub  
+https://github.com/BharkarHariprasad  
 
-GitHub
-https://github.com/BharkarHariprasad
-
-LinkedIn
+LinkedIn  
 https://www.linkedin.com/in/hariprasad-bharkar
