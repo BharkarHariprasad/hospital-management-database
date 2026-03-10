@@ -1,0 +1,16 @@
+# macOS system files
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# OS generated files
+Thumbs.db
+
+# Database dump backups
+*.bak
